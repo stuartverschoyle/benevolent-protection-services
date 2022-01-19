@@ -215,6 +215,10 @@ body .digma p, body .digma label {
 			color: #ffffff !important;
 		}
 
+		a.black:hover {
+			color: #000 !important;
+		}
+
 		a.special:not(.button) {
 			text-decoration: none;
 			border-bottom: 0;
@@ -246,7 +250,7 @@ body .digma p, body .digma label {
 				-ms-transition: background-color 0.2s ease-in-out;
 				transition: background-color 0.2s ease-in-out;
 				border-radius: 100%;
-				border: solid 2px rgba(255, 255, 255, 0.125);
+				border: solid 2px rgb(110 120 26 / 13%);
 				content: '\f105';
 				display: inline-block;
 				font-size: 1.25em;
@@ -3755,7 +3759,7 @@ border-bottom: 0;
 		position: relative;	
 	}
 	.norm .inner {
-		padding: 0;
+		padding: 0!important;
 		margin: 0 auto;
 		width: 55em;
 	}
