@@ -3441,6 +3441,7 @@ border-bottom: 0;
 
 					#menu .links li a:hover {
 						background: #fff;
+						color:#000!important;
 					}
 
 		@media screen and (max-width: 736px) {
