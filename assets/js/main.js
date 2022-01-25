@@ -142,4 +142,45 @@
 
 			});
 
+			$(".set > a").on("click", function(e) {
+				e.preventDefault();
+				if ($(this).hasClass("active")) {
+				  $(this).removeClass("active");
+				  $(this)
+					.siblings(".acc-content")
+					.slideUp(200);
+				  $(".set > a i")
+					.removeClass("fa-minus")
+					.addClass("fa-plus");
+				} else {
+				  $(".set > a i")
+					.removeClass("fa-minus")
+					.addClass("fa-plus");
+				  $(this)
+					.find("i")
+					.removeClass("fa-plus")
+					.addClass("fa-minus");
+				  $(".set > a").removeClass("active");
+				  $(this).addClass("active");
+				  $(".acc-content").slideUp(200);
+				  $(this)
+					.siblings(".acc-content")
+					.slideDown(200);
+				}
+			  });		
+			  
+			  var lastScrollTop = 0;
+			  $(window).scroll(function(){
+				var st = $(this).scrollTop();
+				var banner = $('.banner');
+				setTimeout(function(){
+				  if (st > lastScrollTop){
+					banner.addClass('hide');
+				  } else {
+					banner.removeClass('hide');
+				  }
+				  lastScrollTop = st;
+				}, 200);
+			  });		  
+
 })(jQuery);

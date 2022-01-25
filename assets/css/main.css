@@ -212,11 +212,11 @@ body .digma p, body .digma label {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffffff !important;
+			color: #ffd700;
 		}
 
 		a.black:hover {
-			color: #000 !important;
+			color: #ffd700 !important;
 		}
 
 		a.special:not(.button) {
@@ -3188,7 +3188,28 @@ border-bottom: 0;
 		top: 0;
 		width: 100%;
 		z-index: 10000;
+		display:flex;
 	}
+
+	header ul {
+		display: flex;
+		width: 640px;
+		justify-content: space-evenly;
+		list-style: none;
+		margin: 0 auto;
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
+
+	@media screen and (max-width: 1160px) {
+		header ul {
+			display: none;
+		}
+		#header nav {
+			display: block!important;
+		}
+	}	
 
 		#header h1 {
 			-moz-transition: opacity 0.2s ease-in-out, visibility 0.2s;
@@ -3207,6 +3228,7 @@ border-bottom: 0;
 			}
 
 		#header nav {
+			display: none;
 			font-family: Raleway, Helvetica, sans-serif;
 			font-size: 0.8em;
 			font-weight: 700;
@@ -3432,7 +3454,7 @@ border-bottom: 0;
 					display: block;
 					font-family: Raleway, Helvetica, sans-serif;
 					font-size: 0.8em;
-					font-weight: 200;
+					font-weight: 600;
 					letter-spacing: 0.1em;
 					line-height: 1.85em;
 					padding: 0.75em 0;
@@ -3440,7 +3462,7 @@ border-bottom: 0;
 				}
 
 					#menu .links li a:hover {
-						background: #fff;
+						background: #ffd700;
 						color:#000!important;
 					}
 
@@ -3619,7 +3641,7 @@ border-bottom: 0;
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				padding: 5em 2em 4.25em 2em ;
+				padding: 5em 2em 2em 2em ;
 				margin-bottom: -2.5em;
 			}
 
@@ -3678,6 +3700,12 @@ border-bottom: 0;
 			opacity: 1!important;
 		}
 /* Wrapper */
+
+	#wrapper {
+		margin: 0 auto;
+		max-width: 55rem;
+		padding: 0 20px;
+	}
 
 	#wrapper > header {
 		padding: 11em 0 2.25em 0 ;
@@ -3762,7 +3790,6 @@ border-bottom: 0;
 	.norm .inner {
 		padding: 0!important;
 		margin: 0 auto;
-		width: 55em;
 	}
 
 	.wrapper {
@@ -4390,3 +4417,66 @@ border-bottom: 0;
 /* image poster clicked, player class added using js */
 .video.player img { display: none; }
 .video.player:after { display: none; }
+
+.accordion-container{
+	position: relative;
+	height: auto;
+	margin: 10px auto;
+  }
+  .accordion-container > h2{
+	text-align: center;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ddd;
+  }
+  .set{
+	position: relative;
+	width: 100%;
+	height: auto;
+  }
+  .set > a{
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none;
+	font-weight: 600;
+	border-bottom: 1px solid #ddd;
+	-webkit-transition:all 0.2s linear;
+	-moz-transition:all 0.2s linear;
+	transition:all 0.2s linear;
+  }
+  .set > a i{
+	float: right;
+	margin-top: 2px;
+  }
+  .set > a.active,.set > a:hover{
+	color: #ffd700;
+  }
+  .acc-content{
+	border-bottom: 1px solid #ddd;
+	display:none;
+  }
+  .acc-content p{
+	padding: 10px 15px;
+	margin: 0;
+	color:#fff;
+  }
+
+  h3.orange {
+	  font-size: 1.5rem;
+	color: #ffd700;
+  }
+
+  .banner {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 60px;
+	text-align: center;
+	transition: all 300ms ease-in!important;
+  }
+
+  .banner.hide {
+	transform: translateY(-60px);
+  }
