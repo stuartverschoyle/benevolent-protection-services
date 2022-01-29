@@ -210,7 +210,7 @@ body .digma p, body .digma label {
 		text-decoration: none;
 	}
 
-		a:hover {
+		a:hover, a.active {
 			border-bottom-color: transparent;
 			color: #ffd700;
 		}
@@ -3360,6 +3360,29 @@ border-bottom: 0;
 		transition: filter 0.25s ease;
 	}
 
+	#page-wrapper.logo::after {
+		content: "";
+		background: url('../../images/bps-background.png');
+		opacity: 0.05;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		position: fixed;
+		z-index: -100;  	
+		background-size: 170px;	
+	}
+@media (min-width:1600px)  {
+	#page-wrapper.logo .header-container {
+		justify-content: left;
+	}
+
+	#page-wrapper.logo .header-container img {max-width: 250px;}
+	#page-wrapper.logo .header-container .logo {
+		position:fixed;
+		left:5%;
+	}
+}
 	#menu {
 		-moz-align-items: center;
 		-webkit-align-items: center;
@@ -3537,7 +3560,7 @@ border-bottom: 0;
 
 		#banner .inner {
 			margin: 0 auto;
-			width: 55em;
+			width: 40em;
 		}
 
 		#banner .logo {
@@ -3628,7 +3651,7 @@ border-bottom: 0;
 		@media screen and (max-width: 980px) {
 
 			#banner {
-				padding: 12em 3em 12.375em 3em ;
+				padding: 12em 3em 3em 3em ;
 				margin-bottom: -4.75em;
 			}
 
@@ -3703,8 +3726,7 @@ border-bottom: 0;
 
 	#wrapper {
 		margin: 0 auto;
-		max-width: 55rem;
-		padding: 0 20px;
+		position: relative;
 	}
 
 	#wrapper > header {
@@ -3784,12 +3806,14 @@ border-bottom: 0;
 	}
 
 	.norm {
-		margin: 1.5em 0;
+		margin: 0;
 		position: relative;	
 	}
 	.norm .inner {
 		padding: 0!important;
 		margin: 0 auto;
+		max-width: 55rem;
+		width: 90%;
 	}
 
 	.wrapper {
@@ -4253,8 +4277,12 @@ border-bottom: 0;
 /* Footer */
 #footer {
 	margin-top: -120px;
-	background: rgba(6,6,6,0.8);
-	padding-top: 100px;		}
+	background: #000;
+	padding-top: 100px;	
+	display: block;
+	position: relative;	
+}
+
 	#footer.notop {
 		margin-top: 0px;
 		padding-top: 0px;
@@ -4330,6 +4358,8 @@ border-bottom: 0;
  center;
 			margin-top: -6.5em;
 			padding-top: 6.5em;
+			width: 90%;
+			margin: 0 auto;
 		}
 
 	}
@@ -4463,7 +4493,7 @@ border-bottom: 0;
   }
 
   h3.orange {
-	  font-size: 1.5rem;
+    font-size: 1.5rem;
 	color: #ffd700;
   }
 
