@@ -42,12 +42,13 @@
 
 				<!-- Header -->
 					<header id="header" class="banner">
+						<img class="mob-only" src="images/bps-background.png" alt="" />
 						<ul>
-							<li><a href="/">Home</a></li>
+							<li><a href="/" class="home">Home</a></li>
 							<li><a href="about">About</a></li>
 							<li><a href="services">Services</a></li>
 							<li><a href="close-protection-fully-qualified">Training & Qualifications</a></li>
-							<li><a href="contact">Enquire</a></li>							
+							<li><a href="contact">Enquire</a></li>
 						</ul>
 						<nav>
 							<a href="#menu">Menu</a>
@@ -83,7 +84,7 @@
 							<h2 class="white">Close Protection Services</h2>
 							<p class="uppercase">Benevolent Protection Serivces are an independant contract company.</p>
 							<p>Our Close Protection Guards are expertly trained in risk assessment, hostile environments, home protection, personal protection, event protection and international protection.</p>
-							<p><a href="/contact" class="special">enquire</a></p>
+							<p><a href="#footer" class="special scroll">enquire</a></p>
 						</div>
 					</section>
 
@@ -115,7 +116,7 @@
 							</section>
 
 						<!-- Three -->
-						<section id="three" class="wrapper spotlight style1">
+						<section id="three" class="wrapper spotlight style1 last">
 							<div class="inner">
 								<a href="#" class="image"><img src="images/protection.png" alt="" /></a>
 								<div class="content">
@@ -177,21 +178,31 @@
 
 				<!-- Footer -->
 					<section id="footer">
-						<div class="inner">
-							<h2 class="major">Contact Us - Get Protected</h2>
+						<div class="inner opacity">
+							<h3 class="major orange">Contact Us - Get Protected</h3>
 							<p>Please complete the form below and a member of our staff will be in contact with you.</p>
 							<form name="contact" method="POST" data-netlify="true">
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
+										<input type="text" required name="name" id="name" />
 									</div>
 									<div class="field">
 										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
+										<input type="email" required name="email" id="email" />
 									</div>
 									<div class="field">
-										<label for="message">Message</label>
+										<label for="service">Service required</label>
+										<select name="service required" required=""> 
+											<option value="" disabled="" selected="">Choose Service</option> 
+											<option value="Close Protection" name="Close Protection">Close Protection</option>
+											<option value="Residential Security" name="Residential Security">Residential Security</option>
+											<option value="Private Investigation" name="Private Investigation">Private Investigation</option>
+											<option value="Events" name="Events">Events</option>
+										</select>									
+									</div>										
+									<div class="field">
+										<label for="message">Brief of protection needed</label>
 										<textarea name="message" id="message" rows="4"></textarea>
 									</div>
 								</div>
@@ -200,7 +211,7 @@
 								</ul>
 							</form>
 							<ul class="contact">
-								<li class="icon solid fa-phone">(+44) 744 067 9973</li>
+								<li class="icon solid fa-phone"><a href="tel:+447440679973">(+44) 744 067 9973</a></li>
 								<li class="icon solid fa-envelope"><a href="mailto:BenevolentProtectionServices@gmail.com">BenevolentProtectionServices@gmail.com</a></li>
 								<li class="icon brands fa-facebook-f"><a href="https://www.facebook.com/BenevolentProtectionServices">facebook</a></li>
 								<li class="icon brands fa-instagram"><a href="https://www.instagram.com/BenevolentProtectionServices/">instagram</a></li>
@@ -208,7 +219,10 @@
 							</ul>
 							<ul class="copyright">
 								<li>&copy; 2021 Benevolent Protection Services</li>
-								<li>Close Protection | Residential Security | Fully Trained</li>
+								<li><a href="about">About</a></li>
+								<li><a href="services">Services</a></li>
+								<li><a href="close-protection-fully-qualified">Training</a></li>
+								<li><a href="contact">Enquire</a></li>
 								<li class="icon brands fa-facebook-f"><a href="https://www.facebook.com/BenevolentProtectionServices">&nbsp;</a></li>
 								<li class="icon brands fa-instagram"><a href="https://www.instagram.com/BenevolentProtectionServices/">&nbsp;</a></li>
 								<li class="icon brands fa-youtube"><a href="https://www.youtube.com/channel/UCwx-9waYL3dVsj0O6rPB-vg">&nbsp;</a></li>									

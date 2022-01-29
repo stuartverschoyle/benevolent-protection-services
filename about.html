@@ -43,7 +43,7 @@
 				<!-- Header -->
 				<header id="header" class="banner">
 					<ul>
-						<li><a href="/">Home</a></li>
+						<li><a href="/" class="home">Home</a></li>
 						<li><a href="about" class="active">About</a></li>
 						<li><a href="services">Services</a></li>
 						<li><a href="close-protection-fully-qualified">Training & Qualifications</a></li>
@@ -86,7 +86,7 @@
 							<div class="norm">
 								<div class="inner">
 
-									<h3 class="orange">Owner - Cartlon G. Hall</h3>
+									<h3 class="orange">Owner - Carlton G. Hall</h3>
 									<p>For the past 15 years, I have progressed through increasingly responsible and accountable positions within the military, the field of asset protection and security, with a concentration in operational control, human services, criminal justice, and business.</p>
 
 									<h3 class="major">Military Experience & Background</h3>
@@ -108,20 +108,30 @@
 					<!-- Footer -->
 					<section id="footer" class="notop">
 						<div class="inner">
-							<h2 class="major">Contact Us - Get Protected</h2>
+							<h3 class="major orange">Contact Us - Get Protected</h3>
 							<p>Please complete the form below and a member of our staff will be in contact with you.</p>
 							<form name="contact" method="POST" data-netlify="true">
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
+										<input type="text" required name="name" id="name" />
 									</div>
 									<div class="field">
 										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
+										<input type="email" required name="email" id="email" />
 									</div>
 									<div class="field">
-										<label for="message">Message</label>
+										<label for="service">Service required</label>
+										<select name="service required" required=""> 
+											<option value="" disabled="" selected="">Choose Service</option> 
+											<option value="Close Protection" name="Close Protection">Close Protection</option>
+											<option value="Residential Security" name="Residential Security">Residential Security</option>
+											<option value="Private Investigation" name="Private Investigation">Private Investigation</option>
+											<option value="Events" name="Events">Events</option>
+										</select>									
+									</div>										
+									<div class="field">
+										<label for="message">Brief of protection needed</label>
 										<textarea name="message" id="message" rows="4"></textarea>
 									</div>
 								</div>
@@ -130,7 +140,7 @@
 								</ul>
 							</form>
 							<ul class="contact">
-								<li class="icon solid fa-phone">(+44) 744 067 9973</li>
+								<li class="icon solid fa-phone"><a href="tel:+447440679973">(+44) 744 067 9973</a></li>
 								<li class="icon solid fa-envelope"><a href="mailto:BenevolentProtectionServices@gmail.com">BenevolentProtectionServices@gmail.com</a></li>
 								<li class="icon brands fa-facebook-f"><a href="https://www.facebook.com/BenevolentProtectionServices">facebook</a></li>
 								<li class="icon brands fa-instagram"><a href="https://www.instagram.com/BenevolentProtectionServices/">instagram</a></li>
@@ -138,7 +148,10 @@
 							</ul>
 							<ul class="copyright">
 								<li>&copy; 2021 Benevolent Protection Services</li>
-								<li>Close Protection | Residential Security | Fully Trained</li>
+								<li><a href="about">About</a></li>
+								<li><a href="services">Services</a></li>
+								<li><a href="close-protection-fully-qualified">Training</a></li>
+								<li><a href="contact">Enquire</a></li>
 								<li class="icon brands fa-facebook-f"><a href="https://www.facebook.com/BenevolentProtectionServices">&nbsp;</a></li>
 								<li class="icon brands fa-instagram"><a href="https://www.instagram.com/BenevolentProtectionServices/">&nbsp;</a></li>
 								<li class="icon brands fa-youtube"><a href="https://www.youtube.com/channel/UCwx-9waYL3dVsj0O6rPB-vg">&nbsp;</a></li>									

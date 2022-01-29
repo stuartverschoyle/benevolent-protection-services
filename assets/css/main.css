@@ -1,6 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
-
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 /*
 	Solid State by HTML5 UP
 	html5up.net | @ajlkn
@@ -57,7 +57,9 @@ blockquote, q {
 .black, .major.black {
 	color:#000;
 }
-
+.major.black {
+border-bottom: 1px solid #000;
+}
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -286,8 +288,6 @@ body .digma p, body .digma label {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: inherit;
-		font-family: Raleway, Helvetica, sans-serif;
-		font-weight: 700;
 		letter-spacing: 0.1em;
 		margin: 0 0 1em 0;
 		text-transform: uppercase;
@@ -2224,7 +2224,7 @@ body .digma p, body .digma label {
 		border-radius: 5px;
 		border: none;
 		border: solid 2px rgba(255, 255, 255, 0.125);
-		color: inherit;
+		color: #fff;
 		display: block;
 		outline: 0;
 		padding: 0 1em;
@@ -2232,6 +2232,7 @@ body .digma p, body .digma label {
 		width: 100%;
 	}
 
+	
 		input[type="text"]:invalid,
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
@@ -2706,6 +2707,11 @@ body .digma p, body .digma label {
 			position: relative;
 		}
 
+		ul.contact li:hover{
+			color:#ffd700;
+			cursor: pointer;
+		} 
+
 			ul.contact li:before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
@@ -2734,7 +2740,9 @@ body .digma p, body .digma label {
 			}
 
 			ul.contact li:first-child {
-				margin-top: 0;
+				margin-top: 30px;
+				padding-bottom: 0;
+				height: 30px;
 			}
 
 		@media screen and (max-width: 736px) {
@@ -3179,7 +3187,8 @@ border-bottom: 0;
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: rgba(6, 6, 6, 0.8);
+		background-color: #151623;
+		border-bottom:1px solid #fff;
 		height: 3.5em;
 		left: 0;
 		line-height: 3.5em;
@@ -3202,13 +3211,18 @@ border-bottom: 0;
 		right: 0;
 	}
 
+	.mob-only {
+		display: none;
+	}
+
 	@media screen and (max-width: 1160px) {
 		header ul {
 			display: none;
 		}
-		#header nav {
+		#header nav, .mob-only {
 			display: block!important;
 		}
+
 	}	
 
 		#header h1 {
@@ -3822,6 +3836,10 @@ border-bottom: 0;
 		position: relative;
 	}
 
+	.wrapper.last::after {
+		display: none;
+	}
+
 		.wrapper:before, .wrapper:after {
 			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23151623%3B' /%3E%3C/svg%3E");
 		}
@@ -3990,14 +4008,17 @@ border-bottom: 0;
 			}
 
 			.wrapper.spotlight .image {
-				border-radius: 100%;
 				margin: 0 3em 2em 0;
 				width: 50em;
 				-ms-flex: 1;
+				overflow:hidden;
 			}
 
 				.wrapper.spotlight .image img {
-					width: 100%;
+					width: 100%;margin-left: 0px;position: relative;transition-property: all;transition-duration: 0.8s; transition-timing-function: ease-in-out;transition-delay: 0s;
+				}
+				.wrapper.spotlight .image img:hover {
+					transform: scale(1.2) rotate(2deg);
 				}
 				.vid {
 					height: 260px;
@@ -4277,10 +4298,11 @@ border-bottom: 0;
 /* Footer */
 #footer {
 	margin-top: -120px;
-	background: #000;
-	padding-top: 100px;	
+	background: rgba(0,0,0,0.4);
+	padding-top: 50px;	
 	display: block;
 	position: relative;	
+	border-top: 1px solid #fff;
 }
 
 	#footer.notop {
@@ -4305,17 +4327,26 @@ border-bottom: 0;
 		width: 55em;
 	}
 
+	#footer .inner.opacity{
+		background:rgba(0,0,0,0.6);
+		border-radius: 20px;
+	} 
+
 		#footer .inner > * {
 			width: 100%;
 		}
 
 		#footer .inner form {
 			margin: 0 3em 0 0;
-			width: calc(50% - 1.5em);
+			width: calc(90% - 1.5em);
 		}
 
 		#footer .inner .contact {
-			width: calc(50% - 1.5em);
+			width: calc(10% - 1.5em);
+		}
+
+		ul.contact li a{
+			visibility: hidden;
 		}
 
 		#footer .inner .copyright {
@@ -4336,6 +4367,11 @@ border-bottom: 0;
 				padding: 0;
 				padding-left: 1em;
 			}
+
+			#footer .inner .copyright li:hover{
+				color:#ffd700;
+				cursor: pointer;
+			} 
 
 				#footer .inner .copyright li:first-child {
 					border-left: 0;
@@ -4509,4 +4545,16 @@ border-bottom: 0;
 
   .banner.hide {
 	transform: translateY(-60px);
+  }
+
+  .banner ul li a.home::before {
+	content:'';
+	background:url('../../images/bps-background.png') no-repeat;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    left: -20px;
+    top: -7px;
   }
