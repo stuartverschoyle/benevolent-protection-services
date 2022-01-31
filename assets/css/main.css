@@ -2742,13 +2742,17 @@ body .digma p, body .digma label {
 			ul.contact li:first-child {
 				margin-top: 30px;
 				padding-bottom: 0;
-				height: 30px;
+				height: 35px;
 			}
 
 		@media screen and (max-width: 736px) {
 
 			ul.contact li {
-				margin: 1.5em 0 0 0;
+				margin: 0;
+				display: inline-block;
+				width: 35px;
+				height: 35px;
+				overflow: hidden;				
 			}
 
 		}
@@ -3594,6 +3598,10 @@ border-bottom: 0;
 			transform: translateY(0);
 			opacity: 1;
 			margin: 0 0 1.3em 0;
+		}
+
+		#banner .logo img {
+			max-width: 224px;
 		}
 
 			#banner .logo .icon {
@@ -4564,3 +4572,4 @@ border-bottom: 0;
     left: -20px;
     top: -7px;
   }
+  
