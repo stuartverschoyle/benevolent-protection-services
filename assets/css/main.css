@@ -4369,10 +4369,17 @@ border-bottom: 0;
 		#footer .inner .contact {
 			width: calc(10% - 1.5em);
 		}
-
-		ul.contact li a{
-			visibility: hidden;
+		ul.contact li {
+			height: 35px;
 		}
+		ul.contact li a{
+			height: 35px;
+			position: relative;
+			left: -55px;
+			display: inline-block;
+		}
+
+		ul.contact li a span{visibility: hidden;}
 
 		#footer .inner .copyright {
 			border-top: solid 2px rgba(255, 255, 255, 0.125);
