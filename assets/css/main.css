@@ -2754,6 +2754,16 @@ body .digma p, body .digma label {
 				height: 35px;
 				overflow: hidden;				
 			}
+			#footer .inner .contact {
+				margin-bottom:0!important;
+			}
+			#footer .inner .copyright {
+				margin-top:15px!important;
+			}
+			#footer .inner .copyright li.icon{
+				display:inline-block;
+				margin-right: 10px;
+			}
 
 		}
 
@@ -3052,7 +3062,7 @@ body .digma p, body .digma label {
 
 		.features article {
 			padding: 1.75em 1.75em 0.1em 1.75em ;
-			background-color: #353849;
+			background-color: #151623;
 			border-radius: 5px;
 			margin: 1.5em 3em 1.5em 0;
 			width: calc(50% - 1.5em);
@@ -3074,7 +3084,7 @@ body .digma p, body .digma label {
 
 				.features article .image img {
 					border-radius: 5px 5px 0 0;
-					width: 50%;
+					width: 82%;
 					margin: 40px auto;
 				}
 
@@ -4341,10 +4351,10 @@ border-bottom: 0;
 		width: 55em;
 	}
 
-	#footer .inner.opacity{
+	/* #footer .inner.opacity{
 		background:rgba(0,0,0,0.6);
 		border-radius: 20px;
-	} 
+	}  */
 
 		#footer .inner > * {
 			width: 100%;
@@ -4408,7 +4418,7 @@ border-bottom: 0;
  center;
 			margin-top: -6.5em;
 			padding-top: 6.5em;
-			width: 90%;
+			width: 100%;
 			margin: 0 auto;
 		}
 
