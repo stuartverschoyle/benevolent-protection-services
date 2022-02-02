@@ -2738,6 +2738,8 @@ body .digma p, body .digma label {
 				text-align: center;
 				top: 0;
 				width: 2.5em;
+				margin: 0 auto;
+    			right: 0;
 			}
 
 			ul.contact li:first-child {
@@ -2747,6 +2749,9 @@ body .digma p, body .digma label {
 			}
 
 		@media screen and (max-width: 736px) {
+			ul.contact li:first-child {
+				margin-top:0;
+			}
 
 			ul.contact li {
 				margin: 0;
@@ -2757,6 +2762,8 @@ body .digma p, body .digma label {
 			}
 			#footer .inner .contact {
 				margin-bottom:0!important;
+				display: flex;
+    			justify-content: space-between;
 			}
 			#footer .inner .copyright {
 				margin-top:15px!important;
