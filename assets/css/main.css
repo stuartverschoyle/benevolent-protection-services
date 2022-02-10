@@ -4560,6 +4560,11 @@ border-bottom: 0;
 	border-bottom: 1px solid #ddd;
 	display:none;
   }
+
+  .acc-content ul {
+	  padding-left:40px;
+  }
+
   .acc-content p{
 	padding: 10px 15px;
 	margin: 0;
@@ -4576,13 +4581,13 @@ border-bottom: 0;
 	left: 0;
 	right: 0;
 	top: 0;
-	height: 60px;
+	height: 77px;
 	text-align: center;
 	transition: all 300ms ease-in!important;
   }
 
   .banner.hide {
-	transform: translateY(-60px);
+	transform: translateY(-77px);
   }
 
   .banner ul li a.home::before {
@@ -4593,7 +4598,7 @@ border-bottom: 0;
     position: absolute;
     background-position: center;
     background-size: cover;
-    left: -20px;
-    top: -7px;
+    left: -30px;
+    top: 0px;
   }
   
