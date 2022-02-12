@@ -4495,6 +4495,10 @@ border-bottom: 0;
 
 	@media screen and (max-width: 480px) {
 
+		#banner h1 {
+			font-size: 1.2rem;
+		}
+
 		#footer .inner .copyright li {
 			border-left: 0;
 			display: block;
